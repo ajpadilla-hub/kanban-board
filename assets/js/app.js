@@ -1,13 +1,13 @@
 
-import { actualizadorContenido } from './actualizadorContenido.js';
+import { updateContent } from './updateContent.js';
 import { agregar } from './agregar.js';
-import { basuraArrastrables } from './basuraArrastrables.js';
+import { deleteDraggable } from './deleteDraggable.js';
 import { columnaEscucha } from './columnaEscucha.js';
 
 
 
 
 agregar();
-basuraArrastrables();
-actualizadorContenido();
+deleteDraggable();
+updateContent();
 columnaEscucha();

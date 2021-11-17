@@ -1,6 +1,6 @@
 import { getCookie } from './getCookie.js';
 
-export function actualizadorContenido() {
+export function updateContent() {
 
     let txtareas = document.querySelectorAll(".txt");
     for (let txtarea of txtareas) {

@@ -72,25 +72,25 @@
                 </div>
 
 
-                <div class="col1 zona" id="columna1">
+                <div class="col1 columns" id="columna1">
                     <button class="column1 agregar">+ agregar</button>
                     <?php
                         echo $columna1;
                     ?>
                 </div>
-                <div class="col2 zona" id="columna2">
+                <div class="col2 columns" id="columna2">
                     <button class="column2 agregar">+ agregar</button>
                     <?php
                     echo $columna2;
                     ?>
                 </div>
-                <div class="col3 zona" id="columna3">
+                <div class="col3 columns" id="columna3">
                     <button class="column3 agregar">+ agregar</button>
                     <?php
                     echo $columna3;
                     ?>
                 </div>
-                <div class="col4 zona" id="columna4">
+                <div class="col4 columns" id="columna4">
                     <button class="column4 agregar">+ agregar</button>
                     <?php
                     echo $columna4;

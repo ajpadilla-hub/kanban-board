@@ -1,6 +1,6 @@
 import { getCookie } from './getCookie.js';
 
-export function basuraArrastrables() {
+export function deleteDraggable() {
 
     let botonesEliminar = document.querySelectorAll(".imgParrafo");
 

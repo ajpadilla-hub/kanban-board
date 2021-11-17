@@ -1,9 +1,8 @@
-import { actualizadorContenido } from './actualizadorContenido.js';
-import { basuraArrastrables } from './basuraArrastrables.js';
-import { crearArrastrable } from './crearArrastrable.js';
+import { updateContent } from './updateContent.js';
+import { deleteDraggable } from './deleteDraggable.js';
+import { createDraggable } from './createDraggable.js';
 import { getCookie } from './getCookie.js';
 
-/*         BTNS AGREGADORES          */
 export function agregar() {
 
 
@@ -22,10 +21,10 @@ export function agregar() {
                 .then(function (response) { if (response.ok) { return response.text(); } else { throw "Error en la llamada Ajax"; } })
                 .then(function (id) {
 
-                    let arrastrable = crearArrastrable(id, columna);
-                    document.getElementById(columna).appendChild(arrastrable);
-                    actualizadorContenido();
-                    basuraArrastrables();
+                    let draggable = createDraggable(id, columna);
+                    document.getElementById(columna).appendChild(draggable);
+                    updateContent();
+                    deleteDraggable();
 
                 })
                 .catch(function (err) { console.log(err); });

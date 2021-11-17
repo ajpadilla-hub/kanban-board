@@ -1,4 +1,4 @@
-export function crearArrastrable(id, columna, contenido = '') {
+export function createDraggable(id, columna, contenido = '') {
 
     const arrastrable = document.createElement('div');
     arrastrable.setAttribute('draggable', "true");

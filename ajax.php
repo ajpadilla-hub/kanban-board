@@ -31,7 +31,7 @@ if (isset($_POST["action"]) && $_POST["action"] == "editar_registro") {
 }
 
 
-if (isset($_POST["action"]) && $_POST["action"] == "borrar_registro") {
+if (isset($_POST["action"]) && $_POST["action"] == "deleteRegister") {
 
   $sql = " DELETE FROM `$_POST[columna]` 
   WHERE `id` = '$_POST[id]'  
