@@ -1,0 +1,271 @@
+/*  estilos generales */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin     : 0%;
+    box-sizing : border-box;
+}
+
+.container {
+
+    display: flex;
+}
+
+.container-right {
+    width: 86%;
+
+}
+
+header {
+    background-color: rgba(228, 38, 38, 0.75);
+    height          : 100px;
+}
+
+main {
+
+    height          : 700px;
+    background-color: rgba(243, 243, 236, 0.692);
+
+}
+
+aside {
+    width           : 14%;
+    color           : aliceblue;
+    background-color: rgba(2, 167, 218, 0.815);
+    height          : 800px;
+}
+
+.logo {
+    background-color: rgba(2, 167, 218, 0.815);
+    color           : aliceblue;
+
+    height: 100px;
+
+}
+
+.nav {
+    background-color: rgba(2, 167, 218, 0.815);
+    color           : aliceblue;
+
+    height        : 500px;
+    display       : flex;
+    flex-direction: column;
+
+}
+
+ 
+.nav ul {
+
+
+    padding: 0;
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: 1px;
+
+
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.nav ul li {
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: 1px;
+
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding            : 12px;
+    font-size          : 12px;
+    font-weight        : 600;
+}
+
+
+a {
+    color          : white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*        */
+
+
+
+.tablero {
+    display              : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap      : 10px;
+    justify-items        : center;
+    align-content        : center;
+    row-gap              : 2%;
+
+}
+
+.col1,
+.col2,
+.col3,
+.col4 {
+
+    background-color: rgb(137 131 131 / 14%);
+    min-width       : 300px;
+
+    border-radius: 10px;
+    min-height   : 600px;
+
+}
+
+.draggable {
+
+    background-color: rgb(255 255 255 / 50%);
+    border-radius   : 10px;
+    width           : 90%;
+
+    height    : 100px;
+    box-shadow: -1px 5px 20px 0px rgba(0, 0, 0, 0.54);
+    display   : flex;
+
+    flex-direction : column;
+    justify-content: center;
+    align-content  : center;
+    margin         : 3px auto;
+}
+
+textarea {
+    background-color: #efefefdb;
+    border-radius   : 5px;
+    border          : silver;
+    margin          : 0px auto;
+
+    width      : 90%;
+    height     : 45px;
+    font-family: monospace;
+    font-size  : small;
+    color      : rgb(102, 96, 96);
+}
+
+.parrafo {
+    margin-top         : 4px;
+    /* background-color: rgb(189, 187, 187); */
+    width              : 100%;
+    height             : 25px;
+    display            : flex;
+    justify-content    : flex-end
+}
+
+.imgParrafo {
+    height      : 100%;
+    margin-right: 5%;
+    cursor      : pointer;
+}
+
+.imgParrafo:hover {
+    height      : 110%;
+    margin-right: 5%;
+    cursor      : pointer;
+}
+
+.zona button {
+    margin          : 20px 0 16px 18px;
+    box-shadow      : -1px 5px 20px 0px rgba(0, 0, 0, 0.54);
+    border          : none;
+    background-color: whitesmoke;
+
+    border-radius: 10px;
+    padding      : 8px 30px;
+}
+
+.cabeceras {
+    background-color: rgb(137 131 131 / 14%);
+    border-radius   : 10px;
+    padding         : 4px 14px;
+    min-width       : 300px;
+    text-align      : center;
+    font-family     : Arial, Helvetica, sans-serif;
+    font-size       : 12px;
+    font-weight     : 500;
+}
+
+
+.header {
+    display         : flex;
+    justify-content : flex-end;
+    align-items     : center;
+    background-color: rgba(228, 38, 38, 0.75);
+}
+
+.header-ul {
+    display        : flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style     : none;
+    margin-right   : 4%;
+}
+
+.header-ul li {
+    margin: 12px;
+}
+
+.header-ul li form label {
+
+    margin-right: 12px;
+
+}
+
+header a,
+aside a {
+    color: white;
+
+    text-decoration: none;
+}
+
+aside a {
+    color: white;
+
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu-nav {
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-end;
+}
+
+.logo {
+    background-color: rgba(2, 167, 218, 0.815);
+    color           : aliceblue;
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    height: 100px;
+
+}
+
+li {
+    font-size: 0.8em;
+}
+
+.buscador {
+
+    /* background-color: white; */
+    padding: 3px;
+}
+
+li {
+    font-size: 0.8em;
+}
+
+.buscador input {
+
+    border       : none;
+    border-radius: 5px;
+    padding: 6px;
+}
