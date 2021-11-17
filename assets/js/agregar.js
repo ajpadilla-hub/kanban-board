@@ -18,8 +18,14 @@ export function agregar() {
             data.append('columna', columna);
 
             fetch('ajax.php', { method: 'POST', body: data })
-                .then(function (response) { if (response.ok) { return response.text(); } else { throw "Error en la llamada Ajax"; } })
-                .then(function (id) {
+                .then(response => {
+                    if (response.ok) {
+                        return response.text();
+                    } else {
+                        throw "Error en la llamada Ajax";
+                    }
+                })
+                .then( id => {
 
                     let draggable = createDraggable(id, columna);
                     document.getElementById(columna).appendChild(draggable);

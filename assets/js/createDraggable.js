@@ -1,29 +1,29 @@
-export function createDraggable(id, columna, contenido = '') {
+export function createDraggable(id, column, content = '') {
 
-    const arrastrable = document.createElement('div');
-    arrastrable.setAttribute('draggable', "true");
-    arrastrable.setAttribute('class', "draggable");
-    arrastrable.setAttribute('id', id);
+    const draggable = document.createElement('div');
+    draggable.setAttribute('draggable', "true");
+    draggable.setAttribute('class', "draggable");
+    draggable.setAttribute('id', id);
 
     const textarea = document.createElement('textarea');
     textarea.setAttribute('cols', 30);
     textarea.setAttribute('rows', 2);
     textarea.setAttribute('draggable', "true");
     textarea.setAttribute('class', "txt");
-    textarea.value = contenido;
+    textarea.value = content;
 
-    const parrafo = document.createElement('p');
-    parrafo.setAttribute('class', 'parrafo');
-    parrafo.setAttribute('draggable', "true");
+    const p = document.createElement('p');
+    p.setAttribute('class', 'parrafo');
+    p.setAttribute('draggable', "true");
 
-    const iconoEliminar = document.createElement('img');
-    iconoEliminar.setAttribute('src', './assets/images/delete.png');
-    iconoEliminar.setAttribute('class', 'imgParrafo');
+    const garbageCan = document.createElement('img');
+    garbageCan.setAttribute('src', './assets/images/delete.png');
+    garbageCan.setAttribute('class', 'imgParrafo');
 
-    parrafo.appendChild(iconoEliminar);
+    p.appendChild(garbageCan);
 
-    arrastrable.appendChild(textarea);
-    arrastrable.appendChild(parrafo);
+    draggable.appendChild(textarea);
+    draggable.appendChild(p);
 
-    return arrastrable;
+    return draggable;
 }
