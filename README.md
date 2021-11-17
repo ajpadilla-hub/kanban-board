@@ -1,2 +1,1 @@
-# app-kanban
 # kanban-board
