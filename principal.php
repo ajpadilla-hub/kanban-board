@@ -249,8 +249,6 @@
         }
 
         .buscador {
-
-            /* background-color: white; */
             padding: 3px;
         }
 
@@ -339,9 +337,6 @@
             var span1 = document.getElementsByClassName("close")[1];
             var body = document.getElementsByTagName("body")[0];
             var accept = document.getElementById("aceptar");
-
-
-            // cuando le de a aceptar 
 
             modal.style.display = "block";
             body.style.position = "static";
